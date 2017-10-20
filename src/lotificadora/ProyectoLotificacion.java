@@ -10,7 +10,12 @@ package lotificadora;
  * @author MGFE
  */
 public class ProyectoLotificacion {
-    public static Terreno [][] lotes = new Terreno[5][5];
+    public static Terreno [][] lotes;
+
+    public ProyectoLotificacion() {
+        lotes= new Terreno[5][5];
+        
+    }
     
     public static boolean estaVacia(int a, int b ){
       if(lotes[a][b].getOcupado()== false){

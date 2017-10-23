@@ -49,6 +49,8 @@ public class Lotificadora {
                 System.out.println("Y: ");
                 y = datos.nextInt();
             if(x<5 && y<5){
+                if(pl.estaVacia(x, y)== true){
+                        
                 System.out.println("Ancho del terreno: ");
                 ancho = datos.nextDouble();
                 System.out.println("Largo del terreno: ");
@@ -56,7 +58,7 @@ public class Lotificadora {
                 System.out.println("Precio del terreno: ");
                 precio = datos.nextDouble();
             
-                if(pl.estaVacia(x, y)== true){
+                
                     lotes [x][y].setAncho(ancho);
                     lotes [x][y].setLargo(largo);
                     lotes [x][y].setOcupado(true);
